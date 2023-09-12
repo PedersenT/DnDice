@@ -6,7 +6,7 @@ public class DiceThrow {
         int numberOfHits=0;
 
         for(int i=1; i<=numberOfDice; i++){
-            int hitRoll = (int) (Math.random() * 20) + 1;
+            int hitRoll = (int) (Math.random() * 20) + 1 + hitModifier;
             if(hitRoll>=numberToHit){
                 numberOfHits++;
                 System.out.print("roll: " + i + " = " + hitRoll + " HITS! | ");
@@ -32,7 +32,7 @@ public class DiceThrow {
     }
 
     public void rollDamage(Integer typeOfDice, Integer numberOfDice){
-        System.out.println("\nThrowing for damage with " + numberOfDice + "d" + typeOfDice + ". LET'S GO!");
+        System.out.println("\nThrowing for damage with " + numberOfDice + "d" + typeOfDice + ". GET'EM!");
 
         int totalDamage = rollDamageForClasses(typeOfDice, numberOfDice);
 

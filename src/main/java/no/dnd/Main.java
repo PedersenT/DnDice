@@ -10,13 +10,13 @@ public class Main {
         Attack attack = new Attack();
         DiceThrow diceThrow = new DiceThrow();
 
-        spell.fireball(3);
+//        spell.fireball(3);
 
         //smite not included sword damage
-        smite.divineSmite(5, true, false);
+//        smite.divineSmite(5, true, false);
 
         //sword attack 1d10
-        attack.sword(false);
+//        attack.sword(false);
 
         //rolls hits and damage in one
         diceThrow.rollDamage(6, diceThrow.rollHits(40, 18, 2));

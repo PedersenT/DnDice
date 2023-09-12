@@ -10,12 +10,10 @@ public class Main {
         Attack attack = new Attack();
         DiceThrow diceThrow = new DiceThrow();
 
-        int spellSlotLevel = 5;
-
-        spell.fireball(spellSlotLevel);
+        spell.fireball(3);
 
         //smite not included sword damage
-        smite.divineSmite(spellSlotLevel, true, false);
+        smite.divineSmite(5, true, false);
 
         //sword attack 1d10
         attack.sword(false);
